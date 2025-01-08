@@ -1,14 +1,6 @@
 name: Build and publish macOS wheels
 
-on:
-  push:
-    branches:
-      - pypi-dev
-    paths:
-      - '.github/workflows/build_macos_wheels.yml'
-      - 'python-webrtc/cpp/**'
-      - 'CMakeLists.txt'
-      - 'setup.py'
+on: [push, pull_request]
 
 jobs:
   build_wheels_for_macos:
