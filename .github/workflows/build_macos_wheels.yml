@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build_wheels_for_macos:
     name: Build and publish wheels for macOS
-    runs-on: macos-12
+    runs-on: macos-latest
 
     strategy:
       matrix:
